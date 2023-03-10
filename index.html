@@ -23,7 +23,7 @@
             "3xy": {"url": "https://mini-h5.mall4j.com/", "hide": false},
             "bdfx": {"url": "https://www.haibao.la/", "hide": false},
             "bdxc": {"url": "http://m.aijuqing.cn", "hide": false},
-             "bdlk": {"url": "https://m.ijqw.com/", "hide": false},
+            "bdlk": {"url": "https://m.ijqw.com/", "hide": false},
         }
     </script>
 
@@ -45,7 +45,7 @@
         return null;
     }
 
-    var channel = json[getParam("ch")] == undefined ? json['default'] : getParam("ch")
+    var channel = json[getParam("ch")] == undefined ? json['default'] : json[getParam("ch")]
 
     window.onload = function () {
         document.getElementById("loads").src = channel['url'];
