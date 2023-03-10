@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>页面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script>
+        var json = {
+            "default": {"url": "https://www.guyuezhai.com/", "hide": false},
+            "3xy": {"url": "https://mini-h5.mall4j.com/", "hide": false},
+            "bdfx": {"url": "https://www.haibao.la/", "hide": false},
+            "bdxc": {"url": "http://m.aijuqing.cn", "hide": false},
+        }
+    </script>
+
+</head>
+<body>
+
+<div id="hide" style="width:100%;height: 50px; background: white;position: absolute;z-index: 999"></div>
+
+<iframe id="loads" allowfullscreen='true' hspace="0" vspace="0" frameborder="0"
+        height="100%" width="100%">
+</iframe>
+
+<script>
+
+    function getParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+    }
+
+    var channel = json[getParam("ch")] == undefined ? json['default'] : getParam("ch")
+
+    window.onload = function () {
+        document.getElementById("loads").src = channel['url'];
+        var hide = true;
+        if ("hide" in channel) {
+            hide = channel["hide"]
+        }
+        document.getElementById("hide").setAttribute("hidden", hide);
+    }
+
+</script>
+
+</body>
+
+</html>
