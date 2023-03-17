@@ -1,5 +1,13 @@
 {
 
+	"bdhm2": {
+		"package": "com.hemays.hm",
+		"h5": "1.1.6",
+		"version": "5.1.1",
+		"force": "false",
+		"url": "https://wq.xunxiaoyu.cn/lanzou/?url=https://wwe.lanzoui.com/iKy2P0dv5hmj&pwd=453e&type=down"
+	},
+
 	"bdjp": {
 		"package": "com.jianpian.jp",
 		"h5": "1.1.6",
