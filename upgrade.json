@@ -232,16 +232,6 @@
 		"url": "https://wq.xunxiaoyu.cn/lanzou/?url=https://wwe.lanzoui.com/iKy2P0dv5hmj&pwd=453e&type=down"
 	},
 
-
-	"xy": {
-		"package": "com.seeease.deer",
-		"h5": "1.1.6",
-		"version": "5.1.1",
-		"force": "false",
-		"unload": "com.baozi.bzyingshi",
-		"url": "https://wq.xunxiaoyu.cn/lanzou/?url=https://wwe.lanzoui.com/iKy2P0dv5hmj&pwd=453e&type=down"
-	},
-
 	"bzs": {
 		"package": "com.seeease.small",
 		"h5": "1.1.6",
