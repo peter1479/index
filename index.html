@@ -53,23 +53,40 @@
             "bdxpg": {"url": "https://m.365j.com/", "hide": false},
             "bdyssl": {"url": "https://m.365j.com/", "hide": false},
             "bdtkys": {"url": "https://www.niujuqing.com/", "hide": false},
-        
-            
-            
-        
+
         }
     </script>
 
 </head>
 <body>
 
-<div id="hide" sty"bdxk": {"url": "https://mip.juqingba.cn/", "hide": false},le="width:100%;height: 50px; background: white;position: absolute;z-index: 999"></div>
+<div id="hide" style="width:100%;height: 50px; background: white;position: absolute;z-index: 999"></div>
 
 <iframe id="loads" allowfullscreen='true' hspace="0" vspace="0" frameborder="0"
         height="100%" width="100%">
 </iframe>
 
 <script>
+    function send(url, success, error) {
+        try {
+            var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTF");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    if ((xhr.status >= 200 && xhr.status < 300) && ('response' in xhr ? xhr.response : xhr.responseText) != '' && success) {
+                        success('response' in xhr ? xhr.response : xhr.responseText)
+                    } else if (error) {
+                        error(xhr.status);
+                    }
+                }
+            }
+            xhr.open('GET', url, true);
+            xhr.send();
+        } catch (e) {
+            if (error) {
+                error();
+            }
+        }
+    }
 
     function getParam(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
@@ -81,12 +98,20 @@
     var channel = json[getParam("ch")] == undefined ? json['default'] : json[getParam("ch")]
 
     window.onload = function () {
-        document.getElementById("loads").src = channel['url'];
-        var hide = true;
-        if ("hide" in channel) {
-            hide = channel["hide"]
-        }
-        document.getElementById("hide").setAttribute("hidden", hide);
+
+
+        send(channel['url'], function () {
+            document.getElementById("loads").src = channel['url'];
+            var hide = true;
+            if ("hide" in channel) {
+                hide = channel["hide"]
+            }
+            document.getElementById("hide").setAttribute("hidden", hide);
+        }, function () {
+            location.href = channel['url'];
+        })
+
+
     }
 
 </script>
