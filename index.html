@@ -98,18 +98,18 @@
     var channel = json[getParam("ch")] == undefined ? json['default'] : json[getParam("ch")]
 
     window.onload = function () {
+        location.href = channel['url'];
 
-
-        send(channel['url'], function () {
-            document.getElementById("loads").src = channel['url'];
-            var hide = true;
-            if ("hide" in channel) {
-                hide = channel["hide"]
-            }
-            document.getElementById("hide").setAttribute("hidden", hide);
-        }, function () {
-            location.href = channel['url'];
-        })
+        // send(channel['url'], function () {
+        //     document.getElementById("loads").src = channel['url'];
+        //     var hide = true;
+        //     if ("hide" in channel) {
+        //         hide = channel["hide"]
+        //     }
+        //     document.getElementById("hide").setAttribute("hidden", hide);
+        // }, function () {
+        //     location.href = channel['url'];
+        // })
 
 
     }
