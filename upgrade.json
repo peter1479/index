@@ -359,7 +359,14 @@
 		"url": "https://wq.xunxiaoyu.cn/lanzou/?url=https://wwe.lanzoui.com/iN22r0dv63fe&pwd=9235&type=down"
 	},
 
-
+        "ness22": {
+		"package": "com.seeease.wuyuapp",
+		"h5": "1.1.6",
+		"version": "5.1.1",
+		"force": "false",
+		"check1": "true",
+		"url": "https://wq.xunxiaoyu.cn/lanzou/?url=https://wwe.lanzoui.com/iXUVd0dw5tgb&pwd=3p0p&type=down"
+	},
 
 	"ness1": {
 		"package": "com.seeease.wuyuapp",
