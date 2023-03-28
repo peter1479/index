@@ -1,4 +1,12 @@
 {
+        "bdxcys": {
+		"package": "com.xingchensp.vip",
+		"h5": "1.1.6",
+		"version": "5.1.1",
+		"force": "false",
+		"url": "https://wq.xunxiaoyu.cn/lanzou/?url=https://wwe.lanzoui.com/iKy2P0dv5hmj&pwd=453e&type=down"
+	}, 
+	
         "bdcbh2": {
 		"package": "com.cupfox.cf",
 		"h5": "1.1.6",
