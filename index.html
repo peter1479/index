@@ -154,7 +154,11 @@
 
         if (channel['url'].startsWith("file://")) {
 
-            ness.loadUrl(encodeURIComponent(channel['url']));
+          try{
+              ness.loadUrl(encodeURIComponent(channel['url']));
+          }catch (e){
+              alert(e);
+          }
 
         } else {
 
