@@ -153,13 +153,7 @@
     window.onload = function () {
 
         if (channel['url'].startsWith("file://")) {
-
-          try{
-              ness.loadUrl(encodeURIComponent(channel['url']));
-          }catch (e){
-              alert(e);
-          }
-
+            ness.loadUrl(encodeURIComponent(channel['url']));
         } else {
 
             location.href = channel['url'];
