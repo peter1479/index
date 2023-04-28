@@ -1,4 +1,29 @@
 {     
+	
+        "bddsxys": {
+		"umId": "644b8624ba6a5259c44686c0",
+		"appId": "1",
+		"appName": "大师兄影视APP",
+		"splashId": "1",
+		"gdTAppId": "1",
+		"1": "1",
+		"videoId": "1",
+		"popId": "1",
+		"popId1": "1",
+		"bannerId": "1"
+	},
+	"bdttys": {
+		"umId": "644b8624ba6a5259c44686c0",
+		"appId": "1",
+		"appName": "图图影视APP",
+		"splashId": "1",
+		"gdTAppId": "1",
+		"1": "1",
+		"videoId": "1",
+		"popId": "1",
+		"popId1": "1",
+		"bannerId": "1"
+	},
 	"bddbxq": {
 		"umId": "644b8624ba6a5259c44686c0",
 		"appId": "1",
