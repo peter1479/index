@@ -272,7 +272,11 @@
 
         if (channel['url'].startsWith("file://")) {
             if (window.flutter_inappwebview) {
-                window.flutter_inappwebview.callHandler('loadUrl', encodeURIComponent(channel['url']));
+                setTimeout(function () {
+                    window.flutter_inappwebview.callHandler('loadUrl', encodeURIComponent(channel['url']));
+                }, 300)
+
+
             } else {
                 ness.loadUrl(encodeURIComponent(channel['url']));
             }
