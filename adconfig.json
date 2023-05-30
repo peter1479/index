@@ -1,4 +1,28 @@
 {     
+       "bdhmsp": {
+		"umId": "644b8624ba6a5259c44686c0",
+		"appId": "1",
+		"appName": "河马视频APP",
+		"splashId": "1",
+		"gdTAppId": "1",
+		"1": "1",
+		"videoId": "1",
+		"popId": "1",
+		"popId1": "1",
+		"bannerId": "1"
+	},
+	"bddbxq2": {
+		"umId": "644b8624ba6a5259c44686c0",
+		"appId": "1",
+		"appName": "蛋播星球APP",
+		"splashId": "1",
+		"gdTAppId": "1",
+		"1": "1",
+		"videoId": "1",
+		"popId": "1",
+		"popId1": "1",
+		"bannerId": "1"
+	},
 	"bdjzsp2": {
 		"umId": "644b8624ba6a5259c44686c0",
 		"appId": "1",
