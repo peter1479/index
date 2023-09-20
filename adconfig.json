@@ -1,4 +1,17 @@
 { 
+	
+	"bdsg": {
+		"umId": "64d4ca3ca1a164591b67e4f7",
+		"appId": "1",
+		"appName": "闪购APP",
+		"splashId": "1",
+		"gdTAppId": "1",
+		"1": "1",
+		"videoId": "1",
+		"popId": "1",
+		"popId1": "1",
+		"bannerId": "1"
+	},
 	"sg2": {
 		"umId": "64d4ca3ca1a164591b67e4f7",
 		"appId": "1",
